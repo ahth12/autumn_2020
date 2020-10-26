@@ -1,5 +1,6 @@
 
 public class Pokemon {
+    //поля должны быть private
     String name;
     short size;
     long pokebook_id;
@@ -76,13 +77,15 @@ public class Pokemon {
                 '}';
     }
     public static class Builder{
-        String name;
+        //поля должны быть private
+        String name; 
         short size;
         long pokebook_id;
         String trainer_name;
         short trainer_age;
         String trainer_hometown;
 
+        
         public Builder(String name, String trainer_name, String trainer_hometown) {
             this.name = name;
             this.trainer_name = trainer_name;
