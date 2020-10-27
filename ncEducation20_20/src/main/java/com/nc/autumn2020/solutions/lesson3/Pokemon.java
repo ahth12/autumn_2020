@@ -8,7 +8,7 @@ public class Pokemon {
     private short trainer_age;
     private String trainer_hometown;
 
-    public Pokemon(Builder builder) {
+    private Pokemon(Builder builder) {
         this.name = builder.name;
         this.size = builder.size;
         this.pokebook_id = builder.pokebook_id;
