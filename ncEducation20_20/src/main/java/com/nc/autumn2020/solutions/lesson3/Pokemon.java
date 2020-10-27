@@ -1,12 +1,12 @@
+package com.nc.autumn2020.lesson3;
 
 public class Pokemon {
-    //поля должны быть private
-    String name;
-    short size;
-    long pokebook_id;
-    String trainer_name;
-    short trainer_age;
-    String trainer_hometown;
+    private String name;
+    private short size;
+    private long pokebook_id;
+    private  String trainer_name;
+    private short trainer_age;
+    private String trainer_hometown;
 
     public Pokemon(Builder builder) {
         this.name = builder.name;
@@ -77,15 +77,13 @@ public class Pokemon {
                 '}';
     }
     public static class Builder{
-        //поля должны быть private
-        String name; 
-        short size;
-        long pokebook_id;
-        String trainer_name;
-        short trainer_age;
-        String trainer_hometown;
+        private String name;
+        private short size;
+        private long pokebook_id;
+        private String trainer_name;
+        private short trainer_age;
+        private String trainer_hometown;
 
-        
         public Builder(String name, String trainer_name, String trainer_hometown) {
             this.name = name;
             this.trainer_name = trainer_name;
