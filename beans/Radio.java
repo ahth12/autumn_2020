@@ -1,10 +1,23 @@
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.Arrays;
 
 public class Radio {
     private String name;
     private String[] songs = new String[]{"1st"};
+    @Autowired
+    private RadioStation[] radioStations;
+
     private int i = 0;
     private int maxi = songs.length;
+
+    public RadioStation[] getRadioStations() {
+        return radioStations;
+    }
+
+    public void setRadioStations(RadioStation[] radioStations) {
+        this.radioStations = radioStations;
+    }
 
     public Radio(String[] songs ) {
         this.songs = songs;
@@ -34,6 +47,7 @@ public class Radio {
         return "Radio{" +
                 "name='" + name + '\'' +
                 ", songs=" + Arrays.toString(songs) +
+                ", radioStations=" + Arrays.toString(radioStations) +
                 ", i=" + i +
                 ", maxi=" + maxi +
                 '}';

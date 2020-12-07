@@ -13,6 +13,7 @@ public class Test {
         a.playSong();
         a.switchStation();
         a.playSong();
+        System.out.println(a);
 
 
     }

@@ -12,6 +12,39 @@
     </bean>
 
 
+    <bean class="RadioStation" id="1st">
+        <property name="songs">
+            <array value-type="java.lang.String">
+                <value> 1 st</value>
+                <value> 2 st</value>
+            </array>
+        </property>
+    </bean>
+    <bean class="RadioStation" id="2st">
+        <property name="songs">
+            <array value-type="java.lang.String">
+                <value> 3 st</value>
+                <value> 4 st</value>
+            </array>
+        </property>
+    </bean>
+    <bean class="RadioStation" id="3st">
+        <property name="songs">
+            <array value-type="java.lang.String">
+                <value> 5 st</value>
+                <value> 6 st</value>
+            </array>
+        </property>
+    </bean>
+    <bean class="RadioStation" id="4st">
+        <property name="songs">
+            <array value-type="java.lang.String">
+                <value> 7 st</value>
+                <value> 8 st</value>
+            </array>
+        </property>
+    </bean>
+
     <bean class="Radio" id="RD">
         <property name ="name" value ="name"/>
         <property name="songs">
