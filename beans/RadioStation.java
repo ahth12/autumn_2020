@@ -27,4 +27,9 @@ public class RadioStation {
                 ", songs=" + Arrays.toString(songs) +
                 '}';
     }
+    public void playSong(){
+        for (String song: songs) {
+            System.out.println(name +" played " + song);
+        }
+    }
 }

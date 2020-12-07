@@ -4,12 +4,10 @@ import java.util.Arrays;
 
 public class Radio {
     private String name;
-    private String[] songs = new String[]{"1st"};
     @Autowired
-    private RadioStation[] radioStations;
-
+    private RadioStation[] radioStations = new RadioStation[0];
     private int i = 0;
-    private int maxi = songs.length;
+    private int maxi = radioStations.length;
 
     public RadioStation[] getRadioStations() {
         return radioStations;
@@ -19,16 +17,9 @@ public class Radio {
         this.radioStations = radioStations;
     }
 
-    public Radio(String[] songs ) {
-        this.songs = songs;
-    }
-
-    public Radio() {
-
-    }
 
     public void playSong(){
-        System.out.println("played" + songs[i]);
+        this.radioStations[i].playSong();
     }
     public void switchStation(){
         if (i<= maxi){i++;}
@@ -38,15 +29,14 @@ public class Radio {
     }
 
 
-    public void setSongs(String[] songs) {
-        this.songs =songs;
+    public void setSongs(RadioStation[] radioStations) {
+        this.radioStations =radioStations;
     }
 
     @Override
     public String toString() {
         return "Radio{" +
                 "name='" + name + '\'' +
-                ", songs=" + Arrays.toString(songs) +
                 ", radioStations=" + Arrays.toString(radioStations) +
                 ", i=" + i +
                 ", maxi=" + maxi +

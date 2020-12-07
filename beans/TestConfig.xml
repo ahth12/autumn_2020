@@ -13,6 +13,7 @@
 
 
     <bean class="RadioStation" id="1st">
+        <property name="name" value="name1"/>
         <property name="songs">
             <array value-type="java.lang.String">
                 <value> 1 st</value>
@@ -21,6 +22,7 @@
         </property>
     </bean>
     <bean class="RadioStation" id="2st">
+        <property name="name" value="name2"/>
         <property name="songs">
             <array value-type="java.lang.String">
                 <value> 3 st</value>
@@ -29,6 +31,7 @@
         </property>
     </bean>
     <bean class="RadioStation" id="3st">
+        <property name="name" value="name3"/>
         <property name="songs">
             <array value-type="java.lang.String">
                 <value> 5 st</value>
@@ -37,6 +40,7 @@
         </property>
     </bean>
     <bean class="RadioStation" id="4st">
+        <property name="name" value="name4"/>
         <property name="songs">
             <array value-type="java.lang.String">
                 <value> 7 st</value>
@@ -47,12 +51,6 @@
 
     <bean class="Radio" id="RD">
         <property name ="name" value ="name"/>
-        <property name="songs">
-            <array value-type="java.lang.String">
-                <value> 1 st</value>
-                <value> 2 st</value>
-            </array>
-        </property>
     </bean>
 
 </beans>
