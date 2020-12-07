@@ -1,9 +1,13 @@
+import java.util.Arrays;
+
 public class Radio {
-    public static String[] songs = new String[]{"1st song", "2 song", "3 song"};
-    static int i = 0;
-    static int maxi = songs.length;
+    private String name;
+    private String[] songs = new String[]{"1st"};
+    private int i = 0;
+    private int maxi = songs.length;
 
     public Radio(String[] songs ) {
+        this.songs = songs;
     }
 
     public Radio() {
@@ -21,4 +25,25 @@ public class Radio {
     }
 
 
+    public void setSongs(String[] songs) {
+        this.songs =songs;
+    }
+
+    @Override
+    public String toString() {
+        return "Radio{" +
+                "name='" + name + '\'' +
+                ", songs=" + Arrays.toString(songs) +
+                ", i=" + i +
+                ", maxi=" + maxi +
+                '}';
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
